@@ -1,0 +1,7 @@
+4 4 4
+DEFAULT
+AAAA
+BB 
+D
+DD 
+EEE
