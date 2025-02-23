@@ -1,8 +1,7 @@
-## Getting Started
+## Overview
+IQ Puzzler Pro is a program designed to solve puzzles by strategically placing pieces onto a board using a recursive backtracking algorithm. It reads an input file that specifies the board dimensions and the individual puzzle pieces, then systematically explores all possible placements by generating various rotations and mirror images of each piece. The program places a piece at a candidate location and recursively attempts to fill the board; if a dead-end is reached, it backtracks to try alternative configurations. 
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
-
-## Folder Structure
+## Requirements and Instalation
 
 The workspace contains two folders by default, where:
 
