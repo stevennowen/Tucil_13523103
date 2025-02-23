@@ -28,7 +28,7 @@ IQ Puzzler Pro is a program designed to solve puzzles by strategically placing p
 - Total attempts and time are shown in the detail section.
 
 ## Author 
-`Steven Owen Liauw - 13523103 - Informatics@ITB`
+Steven Owen Liauw - 13523103 - Informatics@ITB
 
 
 
