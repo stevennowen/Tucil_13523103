@@ -12,6 +12,14 @@ The workspace contains two folders by default, where:
   - Download or Clone this Repository
   - SetUp JDK environment
 
-## Dependency Management
+## How to Run Program
+- Make sure your path is on the Tucil-13523103 folder.
+- `Compiling`:
+  - javac --module-path "Your Absolute Path to javafx-sdk-lib" --add-modules javafx.controls,javafx.fxml,javafx.swing -d bin src/GUI/*.java src/solver/*.java
+  - Example : javac --module-path "C:\Users\Owen\OneDrive\Documents\Owen\STIMA\javafx-sdk-23.0.2\lib" --add-modules javafx.controls,javafx.fxml,javafx.swing -d bin src/GUI/*.java src/solver/*.java
+- `Running`:
+  - java --module-path "Your Absolute Path to javafx-sdk-lib" --add-modules javafx.controls,javafx.fxml,javafx.swing -cp bin GUI.MainApp
+  - Example : java --module-path "Your Absolute Path to javafx-sdk-lib" --add-modules javafx.controls,javafx.fxml,javafx.swing -cp bin GUI.MainApp
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+
+
