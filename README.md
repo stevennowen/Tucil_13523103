@@ -21,5 +21,14 @@ IQ Puzzler Pro is a program designed to solve puzzles by strategically placing p
   - java --module-path "Your Absolute Path to javafx-sdk-lib" --add-modules javafx.controls,javafx.fxml,javafx.swing -cp bin GUI.MainApp
   - Example : java --module-path "Your Absolute Path to javafx-sdk-lib" --add-modules javafx.controls,javafx.fxml,javafx.swing -cp bin GUI.MainApp
 
+## How to Use Program 
+- Press the Upload Button and Upload a .txt file.
+- Press the Solve Button to generate a solution.
+- Double click output.txt hyperlink to download the output file.
+- Total attempts and time are shown in the detail section.
+
+## Author 
+`Steven Owen Liauw - 13523103 - Informatics@ITB`
+
 
 
