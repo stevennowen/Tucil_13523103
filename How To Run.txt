@@ -1,0 +1,3 @@
+javac --module-path "C:\Users\Owen\OneDrive\Documents\Owen\STIMA\javafx-sdk-23.0.2\lib" --add-modules javafx.controls,javafx.fxml,javafx.swing -d bin src/GUI/*.java src/solver/*.java
+
+java --module-path "C:\Users\Owen\OneDrive\Documents\Owen\STIMA\javafx-sdk-23.0.2\lib" --add-modules javafx.controls,javafx.fxml,javafx.swing -cp bin GUI.MainApp
