@@ -25,7 +25,7 @@ IQ Puzzler Pro is a program designed to solve puzzles by strategically placing p
 - Press the Upload Button and upload a .txt file.
 - Press the Solve Button to generate a solution.
 - Double click output.txt hyperlink to download the output file.
-- Total attempts and time are shown in the detail section.
+- Total attempts and time consumed are shown in the detail section.
 
 ## Author 
 Steven Owen Liauw - 13523103 - Informatics@ITB
