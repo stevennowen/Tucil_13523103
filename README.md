@@ -1,6 +1,9 @@
 ## Overview
 IQ Puzzler Pro is a program designed to solve puzzles by strategically placing pieces onto a board using a recursive backtracking algorithm. It reads an input file that specifies the board dimensions and the individual puzzle pieces, then systematically explores all possible placements by generating various rotations and mirror images of each piece. The program places a piece at a candidate location and recursively attempts to fill the board; if a dead-end is reached, it backtracks to try alternative configurations. 
 
+![image](https://github.com/user-attachments/assets/5fb1bd5a-bcc3-4061-905a-6d808d5f9436)
+
+
 ## Requirements and Instalation
 
 - `Requirements`:
