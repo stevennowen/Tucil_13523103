@@ -11,7 +11,7 @@ IQ Puzzler Pro is a program designed to solve puzzles by strategically placing p
   - SetUp your JDK and javafx environment
 
 ## How to Run Program
-- Make sure your path is on the Tucil-13523103 folder.
+- Make sure your path is on Tucil-13523103 folder.
 - `Compiling`:
   - javac --module-path "Your Absolute Path to javafx-sdk-lib" --add-modules javafx.controls,javafx.fxml,javafx.swing -d bin src/GUI/*.java src/solver/*.java
   - Example : javac --module-path "C:\Users\Owen\OneDrive\Documents\Owen\STIMA\javafx-sdk-23.0.2\lib" --add-modules javafx.controls,javafx.fxml,javafx.swing -d bin src/GUI/*.java src/solver/*.java
