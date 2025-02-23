@@ -3,8 +3,6 @@ IQ Puzzler Pro is a program designed to solve puzzles by strategically placing p
 
 ## Requirements and Instalation
 
-The workspace contains two folders by default, where:
-
 - `Requirements`:
   - JDK version 21 or Higher
   - Latest javafx 
