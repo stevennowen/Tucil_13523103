@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.css.CssParser?>
+
+<VBox prefHeight="600.0" prefWidth="900.0" style="-fx-background-image: url('@/lib/fluidbg.jpg'); -fx-background-repeat: no-repeat; -fx-background-size: cover;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.Controller">
+  <children>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #333333; -fx-alignment: CENTER_LEFT;">
+         <children>
+            <ImageView blendMode="SCREEN" fitHeight="132.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../lib/LogoCrop.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="287.0" layoutY="44.0" style="-fx-text-fill: #ffffff; -fx-font-size: 29px; -fx-font-family: 'Segoe UI'; -fx-font-weight: bold;" text="IQ PUZZLER PRO SOLVER" textFill="#efeaea">
+               <font>
+                  <Font size="29.0" />
+               </font>
+               <effect>
+                  <DropShadow color="rgba(0,0,0,0.5)" offsetX="3" offsetY="3" radius="5" />
+               </effect>
+            </Label>
+            <ImageView blendMode="OVERLAY" fitHeight="138.0" fitWidth="2000.0" layoutX="1.0" layoutY="-6.0" pickOnBounds="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <image>
+                  <Image url="@../../lib/blacktrg.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+    <SplitPane dividerPositions="0.2505567928730512, 0.7505567928730512" focusTraversable="true" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+      <items>
+        <AnchorPane>
+          <children>
+            <Label alignment="CENTER" layoutX="14.0" layoutY="14.0" minWidth="60.0" prefWidth="-1.0" style="&#10;" text="Upload File" textAlignment="CENTER" wrapText="false">
+              <font>
+                <Font size="18.0" fx:id="x1" />
+              </font>
+              <textFill>
+                <Color red="0.624" green="0.624" blue="0.624" fx:id="x2" />
+              </textFill>
+            </Label>
+                  <Button fx:id="FileButton" layoutX="14.0" layoutY="48.0" mnemonicParsing="false" onAction="#handleUploadButton" style="-fx-background-color: #2196F3; -fx-text-fill: white; -fx-background-radius: 4; -fx-cursor: hand;" text="Upload" />
+                  <Label fx:id="fileLabel" layoutX="14.0" layoutY="80.0" text="No file selected" />
+                  <Label fx:id="LabelDownload" alignment="CENTER" layoutX="14.0" layoutY="107.0" minWidth="60.0" prefWidth="-1.0" style="&#10;" textAlignment="CENTER" wrapText="false">
+                     <font>
+                        <Font size="18.0" fx:id="x11" />
+                     </font>
+                     <textFill>
+                        <Color red="0.624" green="0.624" blue="0.624" fx:id="x21" />
+                     </textFill>
+                  </Label>
+                  <Hyperlink fx:id="linkDownload" layoutX="12.0" layoutY="134.0" style="-fx-font-size: 14px; -fx-text-fill: #2196F3; -fx-underline: true; -fx-font-family: 'Segoe UI';" />
+          </children>
+        </AnchorPane>
+        <ScrollPane prefHeight="-1.0" prefWidth="-1.0">
+          <content>
+            <AnchorPane id="Content" minHeight="-1.0" minWidth="-1.0" prefHeight="545.0" prefWidth="430.0">
+              <children>
+                <Label alignment="CENTER" font="$x1" layoutX="14.0" layoutY="14.0" style="&#10;" text="Map" textAlignment="CENTER" textFill="$x2" wrapText="false" />
+                        <Button fx:id="solveButton" layoutX="14.0" layoutY="48.0" mnemonicParsing="false" onAction="#handleSolveButton" style="-fx-background-color: #4CAF50; -fx-text-fill: white; -fx-background-radius: 4; -fx-cursor: hand;" text="Solve" />
+                              <Label fx:id="LabelHasil" layoutX="14.0" layoutY="85.0" style="-fx-text-fill: red;" />
+                              <ImageView fx:id="resultImage" fitHeight="300" fitWidth="300" layoutX="14.0" layoutY="103.0" style="-fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 10, 0.5, 0, 0);" />
+              </children>
+            </AnchorPane>
+          </content>
+        </ScrollPane>
+        <AnchorPane>
+          <children>
+            <Label alignment="CENTER" font="$x1" layoutX="14.0" layoutY="14.0" style="&#10;" text="Details" textAlignment="CENTER" textFill="$x2" wrapText="false" />
+                  <Label layoutX="14.0" layoutY="48.0" text="Attempts" />
+                  <Label layoutX="14.0" layoutY="73.0" text="Time" />
+                  <Label fx:id="attempts" layoutX="72.0" layoutY="48.0" />
+                  <Label fx:id="time" layoutX="54.0" layoutY="73.0" />
+          </children>
+        </AnchorPane>
+      </items>
+    </SplitPane>
+    <HBox id="HBox" alignment="CENTER_LEFT" spacing="5.0" style="-fx-background-color:rgb(0, 0, 0); -fx-padding: 3.0;" VBox.vgrow="NEVER">
+      <children>
+        <Label maxHeight="1.7976931348623157E308" maxWidth="-1.0" style="-fx-font-size: 11px; -fx-text-fill: rgb(255, 255, 255); -fx-font-family: 'Segoe UI'; -fx-font-style: italic; -fx-font-weight: bold;" text=" Made by Steven Owen" HBox.hgrow="ALWAYS">
+          <font>
+            <Font size="11.0" fx:id="x3" />
+          </font>
+          <textFill>
+            <Color red="0.625" green="0.625" blue="0.625" fx:id="x4" />
+          </textFill>
+        </Label>
+        <Pane prefHeight="-1.0" prefWidth="-1.0" HBox.hgrow="ALWAYS" />
+        <Label font="$x3" maxWidth="-1.0" style="-fx-font-size: 11px; -fx-text-fill: #757575; -fx-font-family: 'Segoe UI';" textFill="$x4" HBox.hgrow="NEVER" />
+      </children>
+      <padding>
+        <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+      </padding>
+    </HBox>
+  </children>
+</VBox>
