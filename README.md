@@ -10,7 +10,7 @@ The workspace contains two folders by default, where:
   - Latest javaFx 
 - `Installation`:
   - Download or Clone this Repository
-  - SetUp JDK environment
+  - SetUp your JDK and javafx environment
 
 ## How to Run Program
 - Make sure your path is on the Tucil-13523103 folder.
