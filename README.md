@@ -7,7 +7,7 @@ The workspace contains two folders by default, where:
 
 - `Requirements`:
   - JDK version 21 or Higher
-  - Latest javaFx 
+  - Latest javafx 
 - `Installation`:
   - Download or Clone this Repository
   - SetUp your JDK and javafx environment
